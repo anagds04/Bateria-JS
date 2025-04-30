@@ -1,55 +1,53 @@
-html{
-    background: url(fundo.png) bottom center;
+html {
+    background: url('fundo.png') bottom center;
     background-size: 100vw 100vh;
     margin: 0;
     padding: 0;
 }
- .keys {
+
+.keys {
     display: flex;
     flex-wrap: wrap;
-    min-width: 100vh;
+    gap: 7vw;
     justify-content: center;
     align-items: center;
-    gap: 7vw;
+    min-height: 100vh;
+}
 
- }
-
-  .key {
-    background: linear-gradient(to bottom right,#1e1e1e,#3f3f3f);
+.key {
+    background: linear-gradient(to bottom right, #1e1e1e, #2c2c2c);
     border: 0.2vw solid #333;
     border-radius: 1vw;
-    box-shadow: 0 0.5vw 1vw #1e1e1e;
-    padding:  2vh 1vw;
-    width: 10vh;
-    color:white ;
-    text-align:center;
-    transition: transform 0.1s aese, box-shadow 0.1s ease, border-color 0.1s ease;
+    box-shadow: 0 0.5vw 1vw rgba(0, 0, 0, 0.4);
+    padding: 2vh 1vw;
+    width: 10vw;
+    color: #fff;
+    text-align: center;
+    transition: transform 0.1s ease, box-shadow 0.1s ease, border-color 0.1s ease;
     cursor: pointer;
-  }
+}
 
-  .key:hover{
-    transform: scale(1.15);
-    border-color: #f518a0;
-    box-shadow: 0 0 1.5vw #f518a0;
-  }
+.key:hover {
+    box-shadow: 0 0 1.5vw rgba(255, 198, 0, 0.3);
+    border-color: #a30f6d;
+}
 
 .playing {
     transform: scale(1.15);
-    border-color: #f518a0;
-    box-shadow: 0 0 1.5vw #f518a0;
+    border-color: #a30f6d;
+    box-shadow: 0 0 1.5vw #a30f6d
 }
 
-kbd{
+kbd {
     display: block;
     font-size: 3.5vw;
     font-weight: bold;
-    color: #3f3f3f;
+    color: #ffffff;
 }
 
-.sound{
-    font-size: 1.2;
+.sound {
+    font-size: 1.2vw;
     text-transform: uppercase;
     letter-spacing: 0.15vw;
-    color: #f518a0;
+    color: #a30f6d;
     margin-top: 1vh;
-}
