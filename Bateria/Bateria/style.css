@@ -32,3 +32,24 @@ html{
     border-color: #f518a0;
     box-shadow: 0 0 1.5vw #f518a0;
   }
+
+.playing {
+    transform: scale(1.15);
+    border-color: #f518a0;
+    box-shadow: 0 0 1.5vw #f518a0;
+}
+
+kbd{
+    display: block;
+    font-size: 3.5vw;
+    font-weight: bold;
+    color: #3f3f3f;
+}
+
+.sound{
+    font-size: 1.2;
+    text-transform: uppercase;
+    letter-spacing: 0.15vw;
+    color: #f518a0;
+    margin-top: 1vh;
+}
